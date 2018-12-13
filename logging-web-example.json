@@ -1,0 +1,44 @@
+{
+	"appenders": [
+		{
+			"type": "console",
+			"level": "DEBUG"
+		},
+		{
+			"type": "dateFile",
+			"filename": "logs/server.log",
+			"pattern": "-yyy-MM-dd",
+			"level": "DEBUG"
+		},
+		{
+			"type": "dateFile",
+			"filename": "logs/request.log",
+			"category": "web",
+			"pattern": "-yyy-MM-dd"
+		},
+		{
+			"type": "categoryFilter",
+			"exclude": ["request", "web"],
+			"appender": {
+				"type": "logstash",
+				"host": "ibrar.lnx.warwick.ac.uk",
+				"port": 10570,
+				"app": "sms",
+				"deployment": "dev",
+				"tier": "monolithic",
+				"debug": false
+			}
+		},
+		{
+			"type": "logstash",
+			"category": "request",
+			"host": "ibrar.lnx.warwick.ac.uk",
+			"port": 10570,
+			"node": "shylock.warwick.ac.uk",
+			"app": "sms",
+			"deployment": "dev",
+			"tier": "monolithic",
+			"debug": false
+		}
+	]
+}

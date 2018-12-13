@@ -7,3 +7,11 @@
 !/.idea/play2_settings.xml
 
 /node_modules
+/logs
+
+# SECRETS
+/local.json*
+/logging-web.json
+
+app.tar.gz
+mocha.json

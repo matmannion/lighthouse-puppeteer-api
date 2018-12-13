@@ -1,0 +1,44 @@
+{
+    "domain": "example.warwick.ac.uk",
+    "port": 3000,
+
+    "sslport": 3001,
+    "sslredirectionport": 443,
+    "sslkey": "",
+    "sslcert": "",
+    "sslca": "",
+
+    "session-secret": "secretsomething",
+
+    "db": "127.0.0.1:27017",
+
+    "masqueraders": ["curef"],
+    "disableConnectionLogging": false,
+
+    "smtphost": "",
+    "smtpport": 25,
+    "smtpuser": "",
+    "smtppassword": "",
+    "smtpssl": false,
+    "smtptls": false,
+
+    "collstream-user-uk": "",
+    "collstream-pass-uk": "",
+    "collstream-user-usa": "",
+    "collstream-pass-usa": "",
+    "collstream-cli-usa": "12143804712",
+    "collstream-user-intl": "",
+    "collstream-pass-intl": "",
+
+    "twilio-account-sid": "",
+    "twilio-auth-token": "",
+    "twilio-cli-uk": "+442476100053",
+    "twilio-cli-intl": "+12625864639",
+
+    "clockwork-api-key": "",
+
+    "mailtrap-address": "",
+
+    "traffic-email-recipients": [],
+    "traffic-sms-recipients": []
+}

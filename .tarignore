@@ -1,0 +1,11 @@
+./local.json
+logs
+*.log
+app.tar.gz
+mocha.json
+.git
+.gitignore
+.mailmap
+./dist/*
+.idea
+logging-web.json
